@@ -1,0 +1,22 @@
+template:
+    cpus: 1
+    memory: 512
+    box: squeeze64
+    box_url: http://puppet-vagrant-boxes.puppetlabs.com/debian-607-x64-vbox4210.box
+    domain: localdomain
+
+nodes:
+-
+    name: node01
+    ip: 10.100.100.11
+    cpus: 2
+    memory: 768
+-
+    name: node02
+    ip: 10.100.100.12
+-
+    name: node03
+    ip: 10.100.100.13
+-
+    name: node04
+    ip: 10.100.100.14
