@@ -1,8 +1,7 @@
-template:
+default:
     cpus: 1
     memory: 512
-    box: squeeze64
-    box_url: http://puppet-vagrant-boxes.puppetlabs.com/debian-607-x64-vbox4210.box
+    box: debian-607-x64
     domain: localdomain
 
 nodes:
@@ -11,6 +10,7 @@ nodes:
     ip: 10.100.100.11
     cpus: 2
     memory: 768
+    box: centos-64-x64
 -
     name: node02
     ip: 10.100.100.12
@@ -20,3 +20,10 @@ nodes:
 -
     name: node04
     ip: 10.100.100.14
+
+boxes:
+    debian-607-x64: http://puppet-vagrant-boxes.puppetlabs.com/debian-607-x64-vbox4210.box
+    centos-64-x64: http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-vbox4210.box
+    centos-59-x64: http://puppet-vagrant-boxes.puppetlabs.com/centos-59-x64-vbox4210.box
+    ubuntu-raring-x64: http://cloud-images.ubuntu.com/vagrant/raring/current/raring-server-cloudimg-amd64-vagrant-disk1.box
+    ubuntu-precise-x64: http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-amd64-vagrant-disk1.box
